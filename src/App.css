@@ -1,0 +1,141 @@
+
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.header {
+  text-align: center;
+  padding: 35px 20px;
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #dddddd;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+form h2 {
+  margin-bottom: 10px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333333;
+}
+
+form input,
+form textarea,
+.search-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button {
+  padding: 12px;
+  background-color: #6c47d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #5030b0;
+}
+
+.project-list h2 {
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  color: #5030b0;
+  margin-top: 0;
+}
+
+.project-card p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.search-container input {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
+
+.project-card button {
+  padding: 10px 15px;
+   background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  background-color: #c0392b;
+}
+
