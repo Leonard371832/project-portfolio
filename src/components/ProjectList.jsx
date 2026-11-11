@@ -1,5 +1,5 @@
 
-function ProjectList({ projects }) {
+function ProjectList({ projects, onDeleteProject }) {
   return (
     <section className="project-list">
       <h2>My Projects</h2>

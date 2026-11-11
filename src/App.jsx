@@ -32,9 +32,9 @@ function App() {
     setProjects([...projects, newProject]);
   }
 
-  function deleteProject(projectId) {
-    setProjects(
-      projects.filter((project) => project.id !== projectId)
+  function deleteProject(id) {
+    setProjects((previousProjects) => 
+      previousProjects.filter((project) => project.id !== id)
     );
   }
 
@@ -66,3 +66,6 @@ function App() {
 }
 
 export default App;
+
+
+
